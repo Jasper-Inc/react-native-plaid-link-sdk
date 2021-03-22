@@ -49,9 +49,11 @@ android {
     buildTypes {
         release {
             debuggable = false
+            matchingFallbacks += "release"
         }
         debug {
             debuggable = true
+            matchingFallbacks += "release"
         }
     }
 }
